@@ -60,7 +60,6 @@ console.log('Generated Password: ' , generatedPassword);
 return generatedPassword
 }
 
-// Code to Write
 function writePassword() { // write.Password func is called stored into password
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
