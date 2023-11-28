@@ -64,13 +64,10 @@ return generatedPassword
 function writePassword() { // write.Password func is called stored into password
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
 }
-
-// Event Listener (Generate button)
-generateBtn.addEventListener("click", writePassword);
+// this function fires writePassword when the "generate" button is clicked
+  generateBtn.addEventListener("click", writePassword);
 
 
 
