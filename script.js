@@ -1,6 +1,6 @@
 // Assignment Code
 
-// #generate element refeerences
+// Element References
 const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 const number = '0123456789';
@@ -10,10 +10,10 @@ const max_Password_Length = '128';
 
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// This function generates the password
 function generatePassword(){ 
 
-// These are the user prompts
+// First Prompt: Enter Password
 const length = prompt("Enter password length between 8 and 128:");
 
 // Validation code
@@ -28,13 +28,14 @@ const passwordLength = parseInt(length);
     return;
     }
 
-// Input prompts
+
+// User Prompts: Add to Input Pool
 const useUpperCase = confirm("Do you want uppercase, bro?");
 const useLowerCase = confirm("How about some lowercase letters, homes?");
 const useNumber = confirm("Now add some numbers!");
 const useSymbol = confirm("Now add some sweet symbols, guy!");
 
-// Password builder using pool of inputs from prompts
+// These lines build the password from the pool generated from the above prompts
 let characters = "";
 if (useUpperCase) characters += upperCase;
 if (useLowerCase) characters += lowerCase;
@@ -68,17 +69,9 @@ function writePassword() { // write.Password func is called stored into password
 
 }
 
-// Add event listener to generate button
+// Event Listener (Generate button)
 generateBtn.addEventListener("click", writePassword);
 
 
-// writePassword is waiting for a value
-// from generatePassword, and then that value is stored
-// into password, and then password in turn
-// password. Text value. Line 21 tests if password 
-// text appears in the box. So the event listener
-// working means conneciton is good. At the end we generate
-// a password
-// 
 
 
