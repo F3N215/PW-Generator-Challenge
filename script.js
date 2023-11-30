@@ -1,4 +1,4 @@
-/* standard password constant variables for character sets (from reviewing online tutorials) */
+// standard password constant variables for character sets (from reviewing online tutorials) 
 const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 const number = '0123456789';
@@ -8,8 +8,7 @@ const maxPasswordLength = 128;
 
 var generateBtn = document.querySelector("#generate");
 
-/* this function generates a password
-returns string | void */
+// this function generates a password returns string | void
 function generatePassword(){ 
 
 // first user prompt
@@ -21,10 +20,10 @@ const passwordLength = parseInt(length); // <- attempts to turn a string into a 
         passwordLength < minPasswordLength ||
         passwordLength > maxPasswordLength
     )
-    {
-      return alert("Yo what the hell is this, try a number between 8 and 128."); 
+  {
+    return alert("Yo what the hell is this, try a number between 8 and 128."); 
       // returns the alert after calling function
-    }
+  }
 
 //  user okay/cancel boolean
 const useUpperCase = confirm("Start by choosing an uppercase letter.");
@@ -32,8 +31,8 @@ const useLowerCase = confirm("Now, choose whether you want lowercase letters.");
 const useNumber = confirm("Now add some numbers.");
 const useSymbol = confirm("Now add some sweet symbols, guy!");
 
-/* conditional gate sends user to beginning of process if all false
-if(!useUpperCase && !lowerCase && !useNumber && !useSymbol){ // must be 
+/* testing conditional gate placement ...
+if(useUpperCase = ""lowerCase && !useNumber && !useSymbol) {
   alert("Come on, you gotta pick at least ONE ...")
   return "Let's go again!"
 } */
@@ -56,7 +55,7 @@ var characters = ""; // changes to an empty string
 // conditional gate sends user to beginning of process if all false
 if(characters === ''){
   alert("Come on, you gotta pick at least ONE ...")
-  return "Let's go again!"
+  return "Let's go again!" 
 }
 
 // ^ can also be expressed as ...    
@@ -64,21 +63,13 @@ if(characters === ''){
     // if (useNumber) characters += number;
     // if (useSymbol) characters += symbol;
 
-/* conditional gate sends user to beginning of process if all false
-    if(characters === ''){
-      alert("Come on, you gotta pick at least ONE.")
-      return;
-  } 
-  */
-
- //   console.log(characters.length)
-
 // generating password from user input 
 let generatedPassword = "";
-    for(let i=0; i < passwordLength; i++){ // user input determines .length loops X times, loop over available character set based on user input
+    for(let i=0; i < passwordLength; i++){ 
+      // user input determines .length loops X times, loop over available character set based on user input
 
       const randomIndex = Math.floor(Math.random() * characters.length); 
-// ie. shows between 10 - 87 (if all characters); math.floor rounds down, and math.random generates 0-1
+// ie. shows between 10 - 87 (if all characters); math.floor rounds down, and math.random generates 0-1. 
 generatedPassword += characters.charAt(randomIndex);
 }
 
@@ -93,6 +84,7 @@ function writePassword() { // write.Password func is called stored into password
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
+
 // this function calls writePassword when the "generate" button is clicked
   generateBtn.addEventListener("click", writePassword);
 
