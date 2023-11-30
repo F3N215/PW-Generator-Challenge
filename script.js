@@ -1,6 +1,6 @@
-// standard password constant variables for character sets (from reviewing online tutorials) 
-const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
+// standard password constant variables that define the character sets from which a password can be made (found via reviewing online tutorials) 
+const upCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const lowCase = 'abcdefghijklmnopqrstuvwxyz';
 const number = '0123456789';
 const symbol = '@#$%^&*()_+|}{[]></-=“';
 const minPasswordLength = 8;
@@ -8,10 +8,10 @@ const maxPasswordLength = 128;
 
 var generateBtn = document.querySelector("#generate");
 
-// this function generates a password returns string | void
+// this function generates a password, it returns string | void
 function generatePassword(){ 
 
-// first user prompt
+// this is the first user prompt
 const length = prompt("Start by choosing a number between 8 and 128. You'll be asked to choose how you want your password. Remember: the greater your variation, the stronger your password.");
 
 const passwordLength = parseInt(length); // <- attempts to turn a string into a number. 
@@ -40,10 +40,10 @@ if(useUpperCase = ""lowerCase && !useNumber && !useSymbol) {
 // these lines build the password from the pool generated from the above prompts
 var characters = ""; // changes to an empty string
     if(useUpperCase){ // conditions to evaluate boolean
-      characters += upperCase; // based on user select, calls const value 
+      characters += upCase; // based on user select, calls const value 
   }
     if(useLowerCase){
-      characters += lowerCase;
+      characters += lowCase;
   }
     if(useNumber){
       characters += number;
