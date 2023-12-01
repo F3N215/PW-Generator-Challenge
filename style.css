@@ -13,7 +13,7 @@ body,
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #000000;
 }
 
@@ -26,16 +26,16 @@ body {
 /* glow keyframe */
 @keyframes glow {
   0% {
-    text-shadow: 0 0 30px hsl(60, 100%, 54%);
+    text-shadow: 0 0 30px hsl(60, 100%, 41%);
   }
   50% {
-    text-shadow: 0 0 20px hsl(60, 100%, 54%);
+    text-shadow: 0 0 20px hsl(60, 100%, 41%);
   }
   60% {
-    text-shadow: 0 0 30px hsl(60, 100%, 54%);
+    text-shadow: 0 0 30px hsl(60, 100%, 41%);
   }
   100% {
-    text-shadow: 0 0 40px hsl(60, 100%, 54%);
+    text-shadow: 0 0 40px hsl(60, 100%, 41%);
   }
 }
 
@@ -49,6 +49,7 @@ header {
   text-shadow: 30px 40px 40px hsl(0, 0%, 0%);
   animation: glow 2s infinite;
 }
+
 /* password window/card */
 .card {
   background-color: hsl(0, 0%, 0%);
@@ -112,10 +113,16 @@ header {
   cursor: crosshair;
 }
 
-button[disabled] {
+button {
   cursor: default;
   background: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+}
+
+button:hover {
+  background-color: hsl(121, 100%, 41%);
+  cursor: crosshair;
+  transition: .9s;
 }
 
 .float-right {
@@ -123,8 +130,6 @@ button[disabled] {
 }
 
 #password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border: none;
   display: block;
