@@ -9,7 +9,7 @@
 
 #### _Links_
 * <a href="https://github.com/F3N215/Portfolio-Challenge/blob/main/index.html">HTML</a>
-* <a href="https://github.com/F3N215/Portfolio-Challenge/blob/main/assets/css/style.css">CSS</a>
+* <a href="https://github.com/F3N215/pw-generator-challenge/blob/main/style.css">CSS</a>
 
 -----
 ## Project Summary 📋
