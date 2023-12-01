@@ -14,29 +14,49 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #000000;
 }
 
 .wrapper {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  font-size: 55px;
-  color: hsl(0, 0%, 0%);
+/* glow keyframe */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 30px hsl(60, 100%, 54%);
+  }
+  50% {
+    text-shadow: 0 0 20px hsl(60, 100%, 54%);
+  }
+  60% {
+    text-shadow: 0 0 30px hsl(60, 100%, 54%);
+  }
+  100% {
+    text-shadow: 0 0 40px hsl(60, 100%, 54%);
+  }
 }
 
+/* header */
+header {
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+  font-size: 55px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 30px 40px 40px hsl(0, 0%, 0%);
+  animation: glow 2s infinite;
+}
+/* password window/card */
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(0, 0%, 0%);
+  color: hsl(219, 74%, 44%);
+  font-style: oblique;
   font-size: 40px;
   text-align: center;
   margin: 0 auto;
@@ -44,12 +64,13 @@ header {
   padding: 30px 40px;
 }
 
+/* bars surrounding input box */
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+  background: #ffffff;
+  height: 10px;
 }
 
 .card-body {
@@ -64,8 +85,8 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+  background: #ffffff;
+  height: 10px;
 }
 
 .card-footer::after {
@@ -85,7 +106,7 @@ header {
   font-size: 22px;
   font-style: oblique;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  margin: 40px 16px 16px 20px;
   padding: 14px 34px;
   text-align: center;
   cursor: crosshair;
@@ -93,7 +114,7 @@ header {
 
 button[disabled] {
   cursor: default;
-  background: #c0c7cf;
+  background: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
 }
 
@@ -116,12 +137,13 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed #000000;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
 }
 
+/* media queries */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
