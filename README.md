@@ -25,7 +25,7 @@
 * Sample prototype via tutorial which taught me what basic JS structure for a password generator might look like
 * Completed side project prototype
 
-<img src="https://github.com/F3N215/pw-generator-challenge/blob/main/images/Screenshot-3.png" alt=“Sculpt-a-Password Prototype”>
+![Sculpt-a-Password Prototype](images/Screenshot-3.png)
 
 # Collaboration Workflow 🦾
 * After reviewing some of my work with my mentor who helped further my understanding, I reworked the JavaScript to “clean it up”
@@ -44,7 +44,7 @@
 
 -----
 ## Summary of Changes 📝  
-# JavaScript
+JavaScript
 * Started by laying out a series of constants to define character sets to select and use in the final password
 * Added first prompt and defined ‘length’ as a constant in the function body the ‘generatePassword’ function
 * This function then “builds” the ‘characters’ string based on user input (boolean)
@@ -56,7 +56,7 @@
 * Adding Math.floor rounds down to make a whole number (instead of 0-1 expressed as decimal places) * The last step concatenates password characters one by one using a ‘+=‘ operator
 * Finally, the function writePassword() calls the HTML id and displays the stored password on click using an EventListener method
 
-# Other
+Other
 * Added comments to HTML for clean sections and easier reference to functions in JS
 * Added header styling: increased size, added an animated glowing feature on <h1>
 * Added colour hover effects to the ‘Generate Password’ button
