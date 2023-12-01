@@ -1,4 +1,6 @@
-// standard password constant variables that define the character sets from which a password can be made (found via reviewing online tutorials) 
+// By effectively captures the user's preferences, this code generates a password based on those preferences, and displays the password on a webpage when the user clicks a button
+
+// standard password constant variables that define character sets from which a password can be made. the min/max lengths define lengths for the generated password (found via reviewing online tutorials) 
 const upCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowCase = 'abcdefghijklmnopqrstuvwxyz';
 const number = '0123456789';
@@ -21,7 +23,7 @@ const passwordLength = parseInt(length); // <- attempts to turn a string into a 
         passwordLength > maxPasswordLength
     )
   {
-    return alert("Yo what the hell is this, try a number between 8 and 128."); 
+    return alert("No, no, you have to use a number between 8 and 128. Remember?"); 
       // returns the alert after calling function
   }
 
@@ -78,17 +80,12 @@ console.log('Generated Password: ' , generatedPassword);
 
 return generatedPassword
 }
-
-function writePassword() { // write.Password func is called stored into password
+// the below function declares both generate.Password and write.Password is called stored into password
+function writePassword() { 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  passwordText.value = password;
+      passwordText.value = password;
 }
 
-// this function calls writePassword when the "generate" button is clicked
+// this triggers writePassword when the "generate" button is clicked
   generateBtn.addEventListener("click", writePassword);
-
-
-
-
-6
