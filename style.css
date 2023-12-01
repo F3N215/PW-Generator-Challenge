@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* main body */
 html,
 body,
 .wrapper {
@@ -96,6 +97,7 @@ header {
   clear: both;
 }
 
+/* button stylings */
 .btn {
   border: none;
   background-color: hsl(219, 74%, 44%);
@@ -125,6 +127,7 @@ button:hover {
   transition: .9s;
 }
 
+/* password box */
 .float-right {
   float: right;
 }
