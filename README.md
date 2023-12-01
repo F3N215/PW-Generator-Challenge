@@ -65,9 +65,9 @@
 
 -----
 ## Screenshots 📸
-<img src="images/Screenshot-1.png" alt="Full page view”>
-<img src="images/Screenshot-2.png" alt="Logged to console”>
-<a href="https://streamable.com/jc3307">Short Screen Recording</a>
+* <img src="images/Screenshot-1.png" alt="Full page view”>
+* <img src="images/Screenshot-2.png" alt="Logged to console”>
+* <a href="https://streamable.com/jc3307">Short Screen Recording</a>
 
 -----
 ## About Me
