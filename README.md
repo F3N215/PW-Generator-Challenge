@@ -58,15 +58,16 @@ JavaScript
 
 Other
 * Added comments to HTML for clean sections and easier reference to functions in JS
-* Added header styling: increased size, added an animated glowing feature on <h1>
+* Added header styling: increased size, added an animated glowing feature on main header
 * Added colour hover effects to the ‘Generate Password’ button
-* Changed background colour for greater visibility/impact * Added CSS comments for easy reference when changing styling
+* Changed background colour for greater visibility/impact
+* Added CSS comments for easy reference when changing styling
 * Used Chrome extension WAVE to test final page for accessibility.
 
 -----
 ## Screenshots 📸
-* <img src="https://github.com/F3N215/pw-generator-challenge/blob/main/images/Screenshot-1.png" alt="Full page view”>
-* <img src="https://github.com/F3N215/pw-generator-challenge/blob/main/images/Screenshot-2.png" alt="Logged to console”>
+* ![Full Page View](images/Screenshot-1.png)
+* ![Logged to Console](images/Screenshot-2.png)
 * <a href="https://streamable.com/jc3307">Short Screen Recording</a>
 
 -----
