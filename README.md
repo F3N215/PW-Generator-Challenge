@@ -28,16 +28,18 @@
 
 # Collaboration Workflow 🦾
 * After reviewing some of my work with my mentor who helped further my understanding, I reworked the JavaScript to “clean it up”
-* Requested information details from Xpert Learning Assistant for assistance on proper syntax and understanding logic behind the code * Connected with my colleague Sahil for an all-day study session to test various updates and share ideas
+* Requested information details from Xpert Learning Assistant for assistance on proper syntax and understanding logic behind the code
+* Connected with my colleague Sahil for an all-day study session to test various updates and share ideas
 * Completed 2nd tutoring session requesting additional explanations and details of JavaScript logic and flow
 * Finally, reviewed additional JavaScript course materials and connected a final time with my mentor
 
 # References 📔
-* Traversy Media: https://www.youtube.com/watch?v=duNmhKgtcsI 
-* Web Dev Simplifed: https://www.youtube.com/watch?v=iKo9pDKKHnc
-* MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-* W3: https://www.w3schools.com/js/js_random.asp * Code Academy: https://discuss.codecademy.com/t/password-generator-checker/790373
-* Geeks for Geeks: https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript/ 
+* <a href="https://www.youtube.com/watch?v=duNmhKgtcsI">Traversy Media</a>
+* <a href="https://www.youtube.com/watch?v=iKo9pDKKHnc">Web Dev Simplifed</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">MDN</a>
+* <a href="https://www.w3schools.com/js/js_random.asp">W3</a>
+* <a href="https://discuss.codecademy.com/t/password-generator-checker/790373">Code Academy</a> 
+* <a href="https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript">Geeks for Geeks</a>  
 
 -----
 ## Summary of Changes 📝  
