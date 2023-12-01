@@ -11,12 +11,9 @@ const maxLength = 128;
 // using querySelector this variable assigns HTML id to the generateBtn variable
 var generateBtn = document.querySelector("#generate");
 
-// this function generates a password, it returns string | void
+// this is the primary function of the generator: a prompt and  generates a password, returns string | void
 function generatePassword(){ 
-
-// this is the first user prompt
-const length = prompt("Start by choosing a number between 8 and 128. You'll be asked to choose how you want your password. Remember: the greater your variation, the stronger your password.");
-
+const length = prompt("Start by choosing a number between 8 and 128. You'll be asked to choose how you want your password. Remember: the greater your variation, the stronger your password."); // this is the first user prompt
 const passwordLength = parseInt(length); // <- attempts to turn a string into a number. 
     if(
       isNaN(passwordLength) || // <- if input is not a number OR if too short OR if too long
