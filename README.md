@@ -65,9 +65,10 @@
 
 -----
 ## Screenshots 📸
-<img src="https://github.com/F3N215/pw-generator-challenge/blob/main/images/Screenshot-1.png" alt="Full page view”>
-<img src="images/Screenshot-2.png" alt=“PW “logged to console”>
-<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/jc3307" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+<img src="images/Screenshot-1.png" alt="Full page view”>
+<img src="images/Screenshot-2.png" alt="Logged to console”>
+<a href="https://streamable.com/jc3307">Short Screen Recording</a>
+
 -----
 ## About Me
 <h3 align="left">Hey there! I'm Dan 👋 I'm a junior fullstack webdev</h3>
