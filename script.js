@@ -29,7 +29,7 @@ const passwordLength = parseInt(length); // <- attempts to turn a string into a 
 const useUpperCase = confirm("Start by choosing an uppercase letter.");
 const useLowerCase = confirm("Now, choose whether you want lowercase letters.");
 const useNumber = confirm("Now add some numbers.");
-const useSymbol = confirm("Now add some sweet symbols, guy!");
+const useSymbol = confirm("Now add some symbols!");
 
 // these lines build the password from the pool generated from the above prompts
 var characters = ""; // changes to an empty string
