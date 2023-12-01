@@ -1,5 +1,3 @@
-// By effectively captures the user's preferences, this code generates a password based on those preferences, and displays the password on a webpage when the user clicks a button
-
 /* standard password constant variables that define character sets from which a password can be made. the min/max lengths define lengths for the generated password (found via reviewing online tutorials). the variable below assigns the "generate" HTML ID to the generateBtn object */
 const upCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowCase = 'abcdefghijklmnopqrstuvwxyz';
