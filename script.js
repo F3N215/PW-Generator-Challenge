@@ -5,9 +5,10 @@ const upCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowCase = 'abcdefghijklmnopqrstuvwxyz';
 const number = '0123456789';
 const symbol = '@#$%^&*()_+|}{[]></-=“';
-const minPasswordLength = 8;
-const maxPasswordLength = 128;
+const minLength = 8;
+const maxLength = 128;
 
+// using querySelector this variable assigns HTML id to the generateBtn variable
 var generateBtn = document.querySelector("#generate");
 
 // this function generates a password, it returns string | void
@@ -19,8 +20,8 @@ const length = prompt("Start by choosing a number between 8 and 128. You'll be a
 const passwordLength = parseInt(length); // <- attempts to turn a string into a number. 
     if(
       isNaN(passwordLength) || // <- if input is not a number OR if too short OR if too long
-        passwordLength < minPasswordLength ||
-        passwordLength > maxPasswordLength
+        passwordLength < minLength ||
+        passwordLength > maxLength
     )
   {
     return alert("No, no, you have to use a number between 8 and 128. Remember?"); 
@@ -32,12 +33,6 @@ const useUpperCase = confirm("Start by choosing an uppercase letter.");
 const useLowerCase = confirm("Now, choose whether you want lowercase letters.");
 const useNumber = confirm("Now add some numbers.");
 const useSymbol = confirm("Now add some sweet symbols, guy!");
-
-/* testing conditional gate placement ...
-if(useUpperCase = ""lowerCase && !useNumber && !useSymbol) {
-  alert("Come on, you gotta pick at least ONE ...")
-  return "Let's go again!"
-} */
 
 // these lines build the password from the pool generated from the above prompts
 var characters = ""; // changes to an empty string
@@ -60,15 +55,9 @@ if(characters === ''){
   return "Let's go again!" 
 }
 
-// ^ can also be expressed as ...    
-    // if (useUpperCase) characters += upperCase;    
-    // if (useNumber) characters += number;
-    // if (useSymbol) characters += symbol;
-
-// generating password from user input 
-let generatedPassword = "";
+let generatedPassword = ""; // generates password from user input
     for(let i=0; i < passwordLength; i++){ 
-      // user input determines .length loops X times, loop over available character set based on user input
+      // user input determines .length loops X times, looping over available character set based on user input
 
       const randomIndex = Math.floor(Math.random() * characters.length); 
 // ie. shows between 10 - 87 (if all characters); math.floor rounds down, and math.random generates 0-1. 
