@@ -25,7 +25,7 @@
 * Sample prototype via tutorial which taught me what basic JS structure for a password generator might look like
 * Completed side project prototype
 
-<img src="images/Screenshot-3.png" alt=“Sculpt-a-Password Prototype”>
+<img src="https://github.com/F3N215/pw-generator-challenge/blob/main/images/Screenshot-3.png" alt=“Sculpt-a-Password Prototype”>
 
 # Collaboration Workflow 🦾
 * After reviewing some of my work with my mentor who helped further my understanding, I reworked the JavaScript to “clean it up”
@@ -65,8 +65,8 @@
 
 -----
 ## Screenshots 📸
-* <img src="images/Screenshot-1.png" alt="Full page view”>
-* <img src="images/Screenshot-2.png" alt="Logged to console”>
+* <img src="https://github.com/F3N215/pw-generator-challenge/blob/main/images/Screenshot-1.png" alt="Full page view”>
+* <img src="https://github.com/F3N215/pw-generator-challenge/blob/main/images/Screenshot-2.png" alt="Logged to console”>
 * <a href="https://streamable.com/jc3307">Short Screen Recording</a>
 
 -----
